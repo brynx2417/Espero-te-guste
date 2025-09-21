@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anderson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fondo">
+    <svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" width="90%" height="90%">
+
+      <!-- Definición de flor -->
+      <defs>
+        <g id="flor">
+          <!-- Pétalos -->
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-40" rx="18" ry="40" fill="#f4d03f" transform="rotate(315)"/>
+          <!-- Centro -->
+          <circle cx="0" cy="0" r="20" fill="#f39c12"/>
+        </g>
+      </defs>
+
+      <!-- Tallos rectos con flores separadas (7 en total) -->
+      <line x1="450" y1="850" x2="250" y2="450" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="250" y="450" class="flor"/>
+
+      <line x1="450" y1="850" x2="350" y2="400" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="350" y="400" class="flor"/>
+
+      <line x1="450" y1="850" x2="550" y2="400" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="550" y="400" class="flor"/>
+
+      <line x1="450" y1="850" x2="650" y2="450" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="650" y="450" class="flor"/>
+
+      <line x1="450" y1="850" x2="300" y2="550" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="300" y="550" class="flor"/>
+
+      <line x1="450" y1="850" x2="600" y2="550" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="600" y="550" class="flor"/>
+
+      <!-- Nueva flor (séptima) un poco más arriba en el centro -->
+      <line x1="450" y1="850" x2="450" y2="350" stroke="#229954" stroke-width="6"/>
+      <use href="#flor" x="450" y="350" class="flor"/>
+    </svg>
+
+    <!-- Luciérnagas -->
+    <div class="fireflies"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
